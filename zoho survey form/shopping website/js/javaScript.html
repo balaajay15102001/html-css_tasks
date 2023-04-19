@@ -1,0 +1,380 @@
+<html>
+<head>
+</head>
+<body>
+<p>This is way you run</p>
+<p id="demo"></p>
+<script>
+
+const emp=["Siva","Vimal","Ramu"];
+const emp1=["Bala","Arun","Raju"];
+
+//concatination
+document.writeln("Concatination");
+document.writeln("<br>");
+var result=emp.concat(emp1);
+document.writeln("The Concatination of an Array: "+result);
+document.writeln("<br>");
+document.writeln("<br>");
+//copy
+
+document.writeln("Copy");
+document.writeln("<br>");
+
+//copy(target,start,end)
+
+var result1=emp.copyWithin(3,0,2);
+document.writeln("The copy of an array:"+result1);
+document.writeln("<br>");
+document.writeln("<br>");
+
+//entries
+
+const entry=emp.entries();
+document.writeln("Entries:");
+document.writeln("<br>");
+for(let x of entry){
+	document.writeln(x+" ");
+	document.writeln("<br>");
+}
+document.writeln("<br>");
+
+//Every
+document.writeln("Every:");
+document.writeln("<br>");
+result.every(checking)
+function checking(result){
+	if(result.length ==4){	
+		document.writeln(result);		
+	}
+}
+document.writeln("<br>");
+
+//flat
+document.writeln("Flat");
+document.writeln("<br>");
+const array=["Bala","Murugan",["Mohammed","Nishar","Madhumita",["Sasmita","Rangesh"]]];
+const flat_Array=array.flat(Infinity);
+document.write("The flat funtion is: "+ flat_Array);
+document.writeln("<br>");
+document.writeln("<br>");
+
+
+//fill()
+document.writeln("Fill:");
+document.writeln("<br>");
+emp1.fill("Nizar",0,2);
+document.writeln(emp1);
+document.writeln("<br>");
+document.writeln("<br>");
+
+//from
+
+document.writeln("from():");
+document.writeln("<br>");
+var text="Balamurugan"
+document.writeln("The normal text of: "+text);
+document.writeln("<br>");
+document.writeln(" The join emp is there: "+Array.from(text));
+document.writeln("<br>");
+document.writeln("<br>");
+
+
+//filter
+document.writeln("Filter:");
+document.writeln("<br>");
+emp.filter(checking)
+function checking(emp){
+	if(emp.length ==4){	
+		document.writeln("filter method is done: "+emp);
+		document.writeln("<br>");		
+	}
+}
+
+document.writeln("<br>");
+document.writeln("<br>");
+
+//find
+document.writeln("Find:");
+document.writeln("<br>");
+result.find(findName);
+document.writeln("<br>");
+function findName(result){
+	if(result.length>4){
+		document.writeln("find more than the length 5: "+result);
+		document.writeln("<br>");
+	}
+}
+document.writeln("<br>");
+
+//find index
+
+document.writeln("Find Index:");
+document.writeln("<br>");
+result.findIndex(findIndexName);
+document.writeln("<br>");
+function findIndexName(result,index){
+	if(result.length>4){
+		document.writeln("findIndex : "+index);
+		document.writeln("<br>");
+	}
+}
+
+//for Each
+document.writeln("For Each:");
+document.writeln("<br>");
+result.forEach(for_each);
+
+function for_each(item)
+{
+	document.writeln(item);
+}
+document.writeln("<br>");
+document.writeln("<br>");
+
+//includes()
+
+document.writeln("Includes:");
+document.writeln("<br>");
+let inclu=emp.includes("Siva");
+document.writeln("The Includes Method is: "+inclu);
+document.writeln("<br>");
+
+//length
+document.writeln("<br>");
+document.writeln("The length of an array:");
+document.writeln("<br>");
+document.writeln("The normal index of: "+emp);
+document.writeln("The length of an array is: "+emp.length);
+document.writeln("<br>");
+document.writeln("<br>");
+
+//indexOF
+
+document.writeln("Index of:");
+document.writeln("<br>");
+document.writeln("The normal index of: "+emp1);
+document.writeln("<br>");
+document.writeln("The Index of is: "+emp1.indexOf("Raju"));
+document.writeln("<br>");
+document.writeln("<br>");
+
+//last index of
+
+document.writeln("Last Index of:");
+document.writeln("<br>");
+document.writeln("The normal index of: "+emp);
+document.writeln("<br>");
+document.writeln("The Last Index of 'Siva' is: "+emp.lastIndexOf("Siva"));
+document.writeln("<br>");
+document.writeln("<br>");
+
+
+//Array is Array
+
+document.writeln("Array is Array:");
+document.writeln("<br>");
+document.writeln("The normal array of: "+emp);
+document.writeln("<br>");
+document.writeln(" The emp is there: "+Array.isArray(emp));
+document.writeln("<br>");
+document.writeln("<br>");
+
+//Array Map
+document.writeln("Array Map");
+document.writeln("<br>");
+document.write("The normal Array: "+emp1);
+document.writeln("<br>");
+const map_arr=emp1.map(MAP);
+function MAP(arr)
+{
+	document.writeln("<br>");
+	document.writeln("Array Map is used:"+arr+"Sharma");
+}
+document.writeln("<br>");
+document.writeln("<br>");
+
+//push()
+
+document.writeln("Push");
+document.writeln("<br>");
+
+emp.push("Sasmita");
+document.write("We Push the name 'Sasmita' is: "+ emp);
+document.writeln("<br>");
+document.writeln("<br>");
+
+//pop()
+
+document.writeln("Pop");
+document.writeln("<br>");
+
+emp.pop("Sasmita");
+document.write("We Pop the name 'Sasmita' is: "+ emp);
+document.writeln("<br>");
+document.writeln("<br>");
+
+//shift
+document.writeln("Shift");
+document.writeln("<br>");
+
+//remove the first element and shift all remaining element in lower index 
+
+var shift=emp1.shift();
+document.writeln("Before shifting: "+emp1);
+document.writeln("<br>");
+document.write("Shift Method is used: "+ shift);
+document.writeln("<br>");
+document.writeln("<br>");
+
+//unshift
+
+document.writeln("Un shift:");
+document.writeln("<br>");
+//it insert the first element by using Sasmita
+emp.unshift("Sasmita");
+
+document.write("Unshift method: "+ emp);
+document.writeln("<br>");
+document.writeln("<br>");
+
+//Map
+
+document.writeln("Map:");
+document.writeln("<br>");
+const array2=new Map([["Bala",1],["Nizar",2]]);
+document.writeln("<br>");
+document.writeln("The Map is there: "+array2.get("Bala"));
+document.writeln("<br>");
+document.writeln("<br>");
+
+//join
+
+document.writeln("join():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+emp);
+document.writeln("<br>");
+document.writeln(" The join emp is there: "+emp.join(" and "));
+document.writeln("<br>");
+document.writeln("<br>");
+
+//keys
+
+document.writeln("Keys():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+emp);
+const keys = emp.keys();
+document.writeln("<br>");
+for(let x of keys){
+	document.writeln(x);
+}
+document.writeln("<br>");
+document.writeln("<br>");
+
+//slice
+
+document.writeln("slice():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+emp);
+document.writeln("<br>");
+document.writeln(" The slice array: "+emp.slice(0,2));
+document.writeln("<br>");
+document.writeln("<br>");
+
+//reverse
+
+document.writeln("reverse():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+emp);
+document.writeln("<br>");
+document.writeln(" The reverse array: "+emp.reverse());
+document.writeln("<br>");
+document.writeln("<br>");
+
+//reduce right
+
+document.writeln("reduce right():");
+document.writeln("<br>");
+const num=[1,2,3,4,5];
+document.writeln("The normal array of: "+num);
+document.writeln("<br>");
+document.writeln("The sum of an array is:"+ num.reduceRight(num1));
+function num1(num){
+	return num;
+}
+document.writeln("<br>");
+document.writeln("<br>");
+
+//flatMap
+
+document.writeln("flatMap():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+num);
+document.writeln("<br>");
+mul=num.map(x=>[[x*3]]);
+document.writeln("The flatMap array of: "+mul);
+document.writeln("<br>");
+document.writeln("<br>");
+
+//some
+
+document.writeln("some():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+num);
+document.writeln("<br>");
+document.writeln("The sum of an array is:"+ num.some(num2));
+function num2(num){
+	return num>4;
+}
+document.writeln("<br>");
+document.writeln("<br>");
+
+//sort
+
+document.writeln("sort():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+num.reverse());
+document.writeln("<br>");
+document.writeln("The sorted array is:"+ num.reverse().sort());
+document.writeln("<br>");
+document.writeln("<br>");
+
+//splice
+
+document.writeln("splice():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+result);
+document.writeln("<br>");
+document.writeln("The spliced array is:"+ result.splice(1,3));
+document.writeln("<br>");
+
+//toString
+document.writeln("<br>");
+document.writeln("toString():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+result);
+document.writeln("<br>");
+document.writeln("The toString array is:"+ result.toString());
+document.writeln("<br>");
+
+//toLocalString
+document.writeln("<br>");
+document.writeln("toLocaleString():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+result);
+document.writeln("<br>");
+document.writeln("The toString array is:"+ result.toLocaleString());
+document.writeln("<br>");
+
+
+//Valueof
+document.writeln("<br>");
+document.writeln("valueOf():");
+document.writeln("<br>");
+document.writeln("The normal array of: "+result);
+document.writeln("<br>");
+document.writeln("The toString array is:"+ result.valueOf());
+document.writeln("<br>");
+</script>
+</body>
+</html>

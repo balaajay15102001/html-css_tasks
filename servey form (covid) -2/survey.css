@@ -1,0 +1,11 @@
+body{
+background-image: url('https://www.emro.who.int/images/stories/coronavirus/covid-19-questions-answers.jpg');
+background-size:cover;
+}
+div{
+      background-color:lightblue;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 50px 60px;
+     box-shadow: 2px 5px 10px rgba(1, 1, 0, 0.5);
+}
